@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>プライバシーポリシー / Privacy Policy - 入居前チェック (room_check_pdf)</title>
+<title>プライバシーポリシー / Privacy Policy - 入居前チェック / Room Check PDF</title>
 <style>
   :root { --fg:#1a1a1a; --muted:#555; --accent:#1565c0; --border:#ddd; --bg:#fff; --note:#fff8e1; --noteborder:#f0c000; }
   * { box-sizing: border-box; }
@@ -33,34 +33,41 @@
   <!-- ============ 日本語版 ============ -->
   <section id="lang-ja">
     <h1>プライバシーポリシー（入居前チェック）</h1>
-    <p class="meta"><strong>最終改定日 / 施行日: 2026年7月1日（初版）</strong></p>
+    <p class="meta"><strong>最終改定日: 2026年10月30日 / 施行日: 2026年7月1日（初版）</strong></p>
 
     <h2>1. 適用範囲とアプリ情報</h2>
     <p>本プライバシーポリシー（以下「本ポリシー」）は、個人開発者（Individual Developer）〔運営者: arrow.code.lab〕が提供するモバイルアプリケーション「入居前チェック」（パッケージ名: room_check_pdf、以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
     <p>本アプリは、賃貸物件の入居前チェックを支援するアプリケーションであり、Android 端末を主な対象として提供されます。</p>
+    <p>本アプリは、欧州経済領域（EEA）、英国およびスイスでは提供していません。</p>
 
-    <h2>2. 収集する情報</h2>
+    <h2>2. 本アプリで取り扱う情報</h2>
     <p>本アプリでは、利用者が入力・撮影した以下の情報を扱います。これらの情報は<strong>すべて利用者の端末内にローカル保存され、運営者や第三者のサーバーへ送信されることはありません</strong>。</p>
     <ul>
       <li><strong>室内点検写真</strong>: 端末のカメラで撮影した写真。</li>
       <li><strong>入力テキスト</strong>: チェック項目の状態、コメント等、利用者が入力したテキスト。</li>
       <li><strong>物件情報</strong>: 物件名・部屋番号等、利用者が入力した情報。</li>
       <li><strong>日付情報</strong>: 点検日等。</li>
+      <li><strong>点検者情報</strong>: 氏名・会社名・住所・電話番号等、利用者が設定画面で入力した情報（PDF レポートへの記載に使用します）。</li>
+      <li><strong>取り込んだ PDF テンプレート</strong>: 利用者が端末から取り込んだ PDF（取引先の書式等）を画像に変換したものと、差し込み項目の配置の設定。</li>
+      <li><strong>撮影位置（位置情報）</strong>: 写真の撮影時の緯度・経度。「その物件で撮影したこと」の記録として、写真の Exif 情報に書き込みます（初回に表示する説明で「記録する」を選び、第 3 章の位置情報の権限を許可した場合のみ）。</li>
+      <li><strong>アプリの設定・利用状況</strong>: 利用モード・表示言語・テーマ等の設定、月ごとの点検完了件数、サブスクリプションの契約状態。</li>
     </ul>
     <p>本アプリは、運営者が管理するサーバーやバックエンドを持たず、上記の利用者データを外部へ収集・送信する機能を備えていません。</p>
     <p>なお、本アプリは端末内で PDF レポートを生成する機能を備えています。生成した PDF を印刷・共有する際は、利用者自身が共有先（メール・クラウド等）を選択します。共有先への送信は利用者の操作によるものであり、本アプリが送信先を制御することはありません。</p>
+    <p>PDF レポートには、点検者情報・物件情報・写真が含まれます。PDF 内の写真には撮影日時・撮影位置（緯度・経度）・端末の機種等の Exif 情報も含まれます。共有先にはこれらの情報も渡りますので、共有する相手をご確認ください。</p>
 
     <h2>3. 端末の権限とその用途</h2>
     <p>本アプリは、機能提供のために以下の Android 権限を使用します。権限は該当機能の利用時に要求され、利用者が許可を拒否した場合、当該機能が利用できないことがあります。</p>
     <ul>
       <li><strong>カメラ（CAMERA）</strong>: 室内点検写真の撮影に使用します。</li>
-      <li><strong>ストレージ／メディアの読み取り（READ_MEDIA_IMAGES〈Android 13 以上〉、READ_EXTERNAL_STORAGE〈Android 12 以下〉）</strong>: 画像の読み取り・表示に使用します。</li>
-      <li><strong>ストレージへの書き込み（WRITE_EXTERNAL_STORAGE〈Android 10 以下〉）</strong>: 画像・PDF の保存に使用します。</li>
+      <li><strong>位置情報（ACCESS_FINE_LOCATION、ACCESS_COARSE_LOCATION）</strong>: 写真の撮影位置の記録に使用します。権限を求める前に、アプリ内で用途を説明します。位置はカメラ画面を開いている間のみ取得し、バックグラウンドでは取得しません。設定画面の「写真に撮影位置を記録する」をオフにした場合は、権限を許可していても位置を取得しません。許可しない場合やオフにした場合も撮影はでき、撮影位置が記録されないだけです。</li>
     </ul>
-    <p>これらの権限で扱うデータは端末内に保持され、外部へ送信されません。</p>
+    <p>写真・PDF はアプリ専用の保存領域に保存するため、本アプリはストレージや写真ライブラリへのアクセス権限を使用しません。</p>
+    <p>これらの権限で扱うデータは端末内に保持され、運営者や第三者へ送信されません（利用者が PDF を共有した場合を除きます）。</p>
 
-    <h2>4. 第三者サービス（広告）</h2>
-    <p>本アプリは、広告配信のために Google が提供する <strong>Google AdMob（Google Mobile Ads）</strong> を利用しています。AdMob を通じて、Google および Google の広告パートナーが、広告配信・効果測定のために以下のようなデータを収集・利用する場合があります。</p>
+    <h2>4. 第三者サービス（広告・課金）</h2>
+    <p>本アプリは、広告配信のために Google が提供する <strong>Google AdMob（Google Mobile Ads）</strong> を利用しています。AdMob を通じて、以下のとおりデータが送信されます。</p>
+    <p><strong>送信先</strong>: Google LLC およびその関連会社、Google の広告パートナー<br><strong>利用目的</strong>: 広告の配信・効果測定<br><strong>送信される情報</strong>:</p>
     <ul>
       <li>広告識別子（AAID / Advertising ID）</li>
       <li>IP アドレス</li>
@@ -74,37 +81,50 @@
       <li>Google 広告設定（パーソナライズ広告の管理）: <a href="https://adssettings.google.com/">https://adssettings.google.com/</a></li>
       <li>AdMob のデータ開示: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
     </ul>
-    <p>なお、本アプリは AdMob 以外に、Firebase Analytics、Crashlytics 等の分析・クラッシュレポートを目的とした外部送信 SDK を使用していません。</p>
+    <p><strong>広告に関する同意</strong>: 法令により同意が必要な地域では、Google の User Messaging Platform（UMP）を使用して、広告の表示前に同意を確認します。同意の内容は、本アプリの設定画面の「広告のプライバシー設定」からいつでも変更できます（同意の変更が必要な地域でのみ表示されます）。</p>
+    <p><strong>サブスクリプション（Google Play の課金）</strong>: 本アプリの有料プランは、Google Play の課金システムを通じて購入します。支払い情報（クレジットカード等）は Google が処理し、運営者が受け取ることはありません。本アプリは、契約中かどうかを確認するために Google Play から購入状態を取得し、その結果を端末内に記録します。Google による取り扱いは、上記の Google プライバシーポリシーに従います。</p>
+    <p><strong>送信先</strong>: Google LLC およびその関連会社（Google Play）<br><strong>利用目的</strong>: 購入の処理、契約状態の確認<br><strong>送信される情報</strong>: 購入・契約に関する情報（商品、購入の状態等）</p>
+    <p>なお、本アプリは AdMob・Google Play の課金以外に、Firebase Analytics、Crashlytics 等の分析・クラッシュレポートを目的とした外部送信 SDK を使用していません。</p>
 
     <h2>5. データの保存場所と保持期間</h2>
     <ul>
       <li>第 2 章に記載した利用者の入力・撮影データは、<strong>すべて利用者の端末内に保存</strong>されます。</li>
       <li>これらのデータは、利用者がアプリ内で削除操作を行うか、本アプリをアンインストールするまで端末内に保持されます。</li>
       <li>運営者はこれらのデータを保有・保管しません。</li>
-      <li>AdMob を通じて Google が収集するデータの保持期間は、Google のプライバシーポリシーに従います。</li>
+      <li>AdMob・Google Play の課金を通じて Google が収集するデータの保持期間は、Google のプライバシーポリシーに従います。</li>
+    </ul>
+    <p><strong>データの安全管理</strong>:</p>
+    <ul>
+      <li>利用者のデータは、他のアプリからアクセスできないアプリ専用の保存領域に保存します。</li>
+      <li>データは端末のバックアップおよび端末間の移行の対象外としており、クラウドへ保存されません。機種変更や本アプリのアンインストールの際は、引き継がれずに失われますのでご注意ください。</li>
+      <li>PDF の作成時に作られる一時ファイルは、本アプリの起動時に削除します。</li>
+      <li>本アプリ独自のデータ暗号化は行っていません。端末の画面ロック等を設定し、端末を適切に管理してください。</li>
     </ul>
 
     <h2>6. 第三者提供</h2>
     <p>運営者は、利用者の端末内データを取得しないため、これを第三者へ提供することはありません。</p>
-    <p>第三者（Google）へのデータ提供は、第 4 章に記載した AdMob による広告配信に関するもののみです。それ以外の目的で第三者へ利用者データを提供・販売することはありません。</p>
+    <p>第三者（Google）へのデータ提供は、第 4 章に記載した AdMob による広告配信と、Google Play の課金に関するもののみです。それ以外の目的で第三者へ利用者データを提供・販売することはありません。</p>
 
     <h2>7. 利用者の権利（データの削除・広告 ID のリセット）</h2>
     <ul>
       <li><strong>端末内データの削除</strong>: 本アプリ内の削除機能を利用するか、本アプリをアンインストールすることで、端末内に保存された点検データ・写真・物件情報等を削除できます。</li>
       <li><strong>広告識別子（Advertising ID）のリセット／削除</strong>: Android の「設定」→「Google」→「広告」から、広告 ID のリセットまたは削除、およびパーソナライズ広告のオプトアウトが可能です。</li>
+      <li><strong>広告に関する同意の変更</strong>: 同意が必要な地域では、本アプリの設定画面の「広告のプライバシー設定」から変更できます。</li>
+      <li><strong>撮影位置の記録の停止</strong>: 本アプリの設定画面の「写真に撮影位置を記録する」をオフにするか、Android の「設定」→「アプリ」→ 本アプリ →「権限」から位置情報の許可を取り消すことで、いつでも停止できます。停止した後に撮影した写真には撮影位置が記録されません。撮影済みの写真に記録された位置は消えません。</li>
     </ul>
 
     <h2>8. 子どものプライバシー</h2>
     <p>本アプリは一般利用者（13 歳以上を想定）を対象としており、<strong>13 歳未満の子どもを対象としていません</strong>。本アプリは、子どもから意図的に個人情報を収集することはありません。</p>
 
     <h2>9. 準拠法</h2>
-    <p>本ポリシーの準拠法および管轄は、日本法を適用することを想定しています。</p>
+    <p>本ポリシーは、日本法に準拠します。</p>
 
     <h2>10. 本ポリシーの改定</h2>
     <p>運営者は、法令の変更やサービス内容の変更に応じて、本ポリシーを改定することがあります。重要な変更を行う場合は、本ポリシーの公開ページ上で告知します。改定後の本ポリシーは、公開ページに掲載された時点から効力を生じます。</p>
     <ul>
-      <li>最終改定日: 2026年10月1日</li>
+      <li>最終改定日: 2026年10月30日</li>
       <li>公開 URL: https://arrow-code-lab.github.io/room-check-pdf-policy</li>
+      <li>関連文書: <a href="./terms.html">利用規約</a> / <a href="./legal.html">特定商取引法に基づく表記</a></li>
     </ul>
 
     <h2>11. お問い合わせ</h2>
@@ -116,35 +136,42 @@
 
   <!-- ============ English version ============ -->
   <section id="lang-en" hidden>
-    <h1>Privacy Policy (Move-in Check)</h1>
-    <p class="meta"><strong>Last updated / Effective date: July 1, 2026 (initial version)</strong></p>
+    <h1>Privacy Policy (Room Check PDF)</h1>
+    <p class="meta"><strong>Last updated: October 30, 2026 / Effective date: July 1, 2026 (initial version)</strong></p>
 
     <h2>1. Scope and App Information</h2>
-    <p>This Privacy Policy (the "Policy") sets out how user information is handled in the mobile application "Move-in Check" (package name: room_check_pdf, the "App"), provided by an Individual Developer [operator: arrow.code.lab].</p>
+    <p>This Privacy Policy (the "Policy") sets out how user information is handled in the mobile application "Room Check PDF" (package name: room_check_pdf, the "App"), provided by an Individual Developer [operator: arrow.code.lab].</p>
     <p>The App is an application that assists with pre-move-in inspections of rental properties, and is provided primarily for Android devices.</p>
+    <p>The App is not offered in the European Economic Area (EEA), the United Kingdom, or Switzerland.</p>
 
-    <h2>2. Information We Collect</h2>
+    <h2>2. Information Handled by the App</h2>
     <p>The App handles the following information entered or captured by the user. All of this information is <strong>stored locally on the user's device and is never transmitted to any server operated by the operator or any third party</strong>.</p>
     <ul>
       <li><strong>Room inspection photos</strong>: Photos taken with the device camera.</li>
       <li><strong>Input text</strong>: Text entered by the user, such as the status of check items and comments.</li>
       <li><strong>Property information</strong>: Information entered by the user, such as property name and room number.</li>
       <li><strong>Date information</strong>: Such as the inspection date.</li>
+      <li><strong>Inspector information</strong>: Information entered by the user on the settings screen, such as name, company name, address, and phone number (used to include in PDF reports).</li>
+      <li><strong>Imported PDF templates</strong>: Images converted from PDFs that the user imports from the device (such as a client's forms), and the placement settings for inserted fields.</li>
+      <li><strong>Photo location (location information)</strong>: The latitude and longitude at the time a photo is taken. This is written to the photo's Exif data as a record that the photo was taken at the property (only if the user chooses "Record" in the explanation shown the first time and grants the location permission described in Section 3).</li>
+      <li><strong>App settings and usage</strong>: Settings such as the usage mode, display language, and theme; the number of inspections completed each month; and the subscription status.</li>
     </ul>
     <p>The App has no server or backend managed by the operator, and has no functionality to collect or transmit the above user data externally.</p>
     <p>The App has a feature to generate a PDF report on the device. When printing or sharing the generated PDF, the user themselves selects the sharing destination (email, cloud, etc.). Any transmission to a sharing destination is performed by the user's action, and the App does not control the destination.</p>
+    <p>PDF reports include inspector information, property information, and photos. Photos in a PDF also include Exif data such as the date and time taken, the photo location (latitude and longitude), and the device model. This information is also passed to the sharing destination, so please check who you share it with.</p>
 
     <h2>3. Device Permissions and Their Uses</h2>
     <p>The App uses the following Android permissions to provide its features. Permissions are requested when the relevant feature is used, and if the user denies permission, the corresponding feature may become unavailable.</p>
     <ul>
       <li><strong>Camera (CAMERA)</strong>: Used to take room inspection photos.</li>
-      <li><strong>Reading storage / media (READ_MEDIA_IMAGES [Android 13+], READ_EXTERNAL_STORAGE [Android 12 and below])</strong>: Used to read and display images.</li>
-      <li><strong>Writing to storage (WRITE_EXTERNAL_STORAGE [Android 10 and below])</strong>: Used to save images and PDFs.</li>
+      <li><strong>Location (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)</strong>: Used to record where photos are taken. The App explains this use before requesting the permission. Location is obtained only while the camera screen is open, and never in the background. If "Record location in photos" is turned off on the settings screen, location is not obtained even if the permission is granted. Photos can still be taken if the permission is not granted or the setting is off; the photo location is simply not recorded.</li>
     </ul>
-    <p>Data handled through these permissions is retained on the device and is not transmitted externally.</p>
+    <p>Photos and PDFs are saved in the App's private storage area, so the App does not use permissions to access storage or the photo library.</p>
+    <p>Data handled through these permissions is retained on the device and is not transmitted to the operator or any third party (except when the user shares a PDF).</p>
 
-    <h2>4. Third-Party Services (Advertising)</h2>
-    <p>The App uses <strong>Google AdMob (Google Mobile Ads)</strong>, provided by Google, to serve advertisements. Through AdMob, Google and Google's advertising partners may collect and use data such as the following for ad delivery and measurement:</p>
+    <h2>4. Third-Party Services (Advertising and Billing)</h2>
+    <p>The App uses <strong>Google AdMob (Google Mobile Ads)</strong>, provided by Google, to serve advertisements. Data is transmitted through AdMob as follows.</p>
+    <p><strong>Recipients</strong>: Google LLC and its affiliates, and Google's advertising partners<br><strong>Purpose</strong>: Ad delivery and measurement<br><strong>Information transmitted</strong>:</p>
     <ul>
       <li>Advertising identifier (AAID / Advertising ID)</li>
       <li>IP address</li>
@@ -158,37 +185,50 @@
       <li>Google Ads Settings (manage personalized ads): <a href="https://adssettings.google.com/">https://adssettings.google.com/</a></li>
       <li>AdMob data disclosure: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
     </ul>
-    <p>The App does not use any external transmission SDKs for analytics or crash reporting, such as Firebase Analytics or Crashlytics, other than AdMob.</p>
+    <p><strong>Consent for advertising</strong>: In regions where consent is required by law, the App uses Google's User Messaging Platform (UMP) to obtain consent before showing ads. Users can change their consent at any time from "Ad privacy settings" on the App's settings screen (shown only in regions where changing consent is required).</p>
+    <p><strong>Subscriptions (Google Play Billing)</strong>: The App's paid plan is purchased through the Google Play billing system. Payment information (such as credit card details) is processed by Google, and the operator never receives it. To check whether a subscription is active, the App obtains the purchase status from Google Play and records the result on the device. Google's handling of this data is governed by the Google Privacy Policy above.</p>
+    <p><strong>Recipients</strong>: Google LLC and its affiliates (Google Play)<br><strong>Purpose</strong>: Processing purchases and checking subscription status<br><strong>Information transmitted</strong>: Information about purchases and subscriptions (such as the product and purchase status)</p>
+    <p>The App does not use any external transmission SDKs for analytics or crash reporting, such as Firebase Analytics or Crashlytics, other than AdMob and Google Play Billing.</p>
 
     <h2>5. Data Storage Location and Retention Period</h2>
     <ul>
       <li>The user's input and captured data described in Section 2 is <strong>stored entirely on the user's device</strong>.</li>
       <li>This data is retained on the device until the user deletes it within the App or uninstalls the App.</li>
       <li>The operator does not hold or store this data.</li>
-      <li>The retention period for data collected by Google through AdMob is governed by Google's Privacy Policy.</li>
+      <li>The retention period for data collected by Google through AdMob and Google Play Billing is governed by Google's Privacy Policy.</li>
+    </ul>
+    <p><strong>Data security</strong>:</p>
+    <ul>
+      <li>User data is saved in the App's private storage area, which other apps cannot access.</li>
+      <li>Data is excluded from device backup and device-to-device transfer, and is not stored in the cloud. Please note that it will not carry over and will be lost when you change devices or uninstall the App.</li>
+      <li>Temporary files created when generating a PDF are deleted when the App starts.</li>
+      <li>The App does not apply its own data encryption. Please set a screen lock on your device and manage it appropriately.</li>
     </ul>
 
     <h2>6. Provision to Third Parties</h2>
     <p>Because the operator does not obtain the user's on-device data, the operator does not provide it to any third party.</p>
-    <p>The only provision of data to a third party (Google) is that related to ad delivery via AdMob described in Section 4. The App does not provide or sell user data to third parties for any other purpose.</p>
+    <p>The only provision of data to a third party (Google) is that related to ad delivery via AdMob and to Google Play Billing, as described in Section 4. The App does not provide or sell user data to third parties for any other purpose.</p>
 
     <h2>7. User Rights (Data Deletion and Advertising ID Reset)</h2>
     <ul>
       <li><strong>Deleting on-device data</strong>: By using the delete function within the App, or by uninstalling the App, the user can delete inspection data, photos, property information, and other data stored on the device.</li>
       <li><strong>Resetting / deleting the Advertising ID</strong>: From the Android "Settings" &rarr; "Google" &rarr; "Ads", the user can reset or delete the advertising ID and opt out of personalized advertising.</li>
+      <li><strong>Changing consent for advertising</strong>: In regions where consent is required, the user can change it from "Ad privacy settings" on the App's settings screen.</li>
+      <li><strong>Stopping photo location recording</strong>: The user can stop this at any time by turning off "Record location in photos" on the App's settings screen, or by revoking the location permission from the Android "Settings" &rarr; "Apps" &rarr; this App &rarr; "Permissions". Photos taken after stopping will not include the photo location. Locations already recorded in photos are not removed.</li>
     </ul>
 
     <h2>8. Children's Privacy</h2>
     <p>The App is intended for general users (assumed to be 13 years of age or older) and is <strong>not directed at children under the age of 13</strong>. The App does not knowingly collect personal information from children.</p>
 
     <h2>9. Governing Law</h2>
-    <p>This Policy is intended to be governed by the laws of Japan and subject to their jurisdiction.</p>
+    <p>This Policy is governed by the laws of Japan.</p>
 
     <h2>10. Changes to This Policy</h2>
     <p>The operator may revise this Policy in response to changes in laws or in the service. If any material change is made, it will be announced on the published page of this Policy. The revised Policy takes effect from the time it is posted on the published page.</p>
     <ul>
-      <li>Last updated: Oct 1, 2026</li>
+      <li>Last updated: October 30, 2026</li>
       <li>Published URL: https://arrow-code-lab.github.io/room-check-pdf-policy/</li>
+      <li>Related documents: <a href="./terms.html">Terms of Service</a> / <a href="./legal.html">Legal Notice</a></li>
     </ul>
 
     <h2>11. Contact</h2>
