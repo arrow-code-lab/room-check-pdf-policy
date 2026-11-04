@@ -1,0 +1,6 @@
+node: requirements
+kind: skip
+from: pr
+to: requirements
+skipped: []
+reason: 区間 要望整理 を名指しして経路を飛ばした
