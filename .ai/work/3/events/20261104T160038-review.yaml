@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:116
+fix: 「設定」→「プライバシーとセキュリティ」（iOS 15 では「プライバシー」）→「トラッキング」、または「設定」→ 本アプリ →「トラッキングを許可」と書く（英語版も "Privacy & Security" ("Privacy" on iOS 15)）。最小 OS を 16 に上げると決まれば今のままでよい
+state: open
+summary: トラッキングの設定の場所「プライバシーとセキュリティ」は iOS 16 以降の名称で、アプリの最小 OS（iOS 15.0）では「プライバシー」
+body: "index.html:116 / :226 はトラッキングの許可の変更を「設定」→「プライバシーとセキュリティ」→「トラッキング」と書いている。この名称は iOS 16 からで、iOS 15 では「設定」→「プライバシー」→「トラッキング」。アプリの origin/main は IPHONEOS_DEPLOYMENT_TARGET = 15.0（project.pbxproj）で、doc/spec.md 10.3 #8 で iOS 16 に上げるかは未決定。iOS 15 の利用者には書かれた項目が見つからない。あわせて、アプリごとの「設定」→ 本アプリ →「トラッキングを許可」でも変更できる。"

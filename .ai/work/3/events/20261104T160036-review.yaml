@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: legal.html:51
+fix: legal.html の動作環境（日英）を「App Store のアプリ掲載ページに記載の iOS / iPadOS 端末（iPhone・iPad）」または括弧を外して「App Store のアプリ掲載ページに記載の端末」にする。index.html 1 章（日英）も「iOS 端末（iPhone・iPad、App Store）」にする。iPad を出さない方針なら、アプリ側で TARGETED_DEVICE_FAMILY を 1 にする課題として arrow-code-lab/room-check-pdf に回し、spec §8 に書く
+state: open
+summary: iOS の対象端末を iPhone に限っているが、アプリは iPad にも対応している（TARGETED_DEVICE_FAMILY = "1,2"）
+body: アプリの origin/main 1b64f41 の ios/Runner.xcodeproj/project.pbxproj は TARGETED_DEVICE_FAMILY = "1,2"（iPhone と iPad）で、Info.plist も UISupportedInterfaceOrientations~ipad と UIRequiresFullScreen を持ち、doc/spec.md 8 章も「iPhone・iPad ともポートレートのみ」と iPad を前提にしている。一方、legal.html:51 / :75 の動作環境は「App Store のアプリ掲載ページに記載の iOS 端末（iPhone）」、index.html:40 / :150 は「iOS 端末（iPhone、App Store）」と iPhone に限っている。このまま公開すると App Store の掲載ページ（iPad 対応と表示される）と特商法表記の動作環境が食い違う。spec FR-8 が「iOS（iPhone）」と書いており、実装は spec に従っている。

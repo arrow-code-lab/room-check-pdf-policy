@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:118
+fix: "index.html:118 の iOS の手順を「「設定」→ 本アプリ →「位置情報」」にし（英語版 :228 も \"this App\" に揃える）、1 章の「iOS での表示名: Room Check PDF」は外すか「英語名: Room Check PDF」に戻す。表示名を書き続けるなら、アプリ側のローカライズの予定を spec §8 に書き、ローカライズ時にポリシーも直す前提を残す"
+state: open
+summary: 日本語版の iOS の設定の場所に表示名「Room Check PDF」を固定で書いており、予定している日本語名のローカライズ後に食い違う
+body: "index.html:118 は位置情報の取り消しを「iOS: 「設定」→「Room Check PDF」→「位置情報」」と書き、:39 も「英語名・iOS での表示名: Room Check PDF」としている。現時点の Info.plist は CFBundleDisplayName が「Room Check PDF」だけで ja.lproj/InfoPlist.strings も無いので、今の動作とは一致している。ただしアプリの doc/spec.md 10.1 #6 は公開前の作業として「iOS: ja.lproj/InfoPlist.strings で日本語名を設定する」を挙げており、それを行うと日本語環境の「設定」には「入居前チェック」と表示され、日本語版ポリシーの手順と 1 章の表示名が実態と食い違う。Android の手順は「本アプリ」と書いており、OS 間で書き方も揃っていない。"

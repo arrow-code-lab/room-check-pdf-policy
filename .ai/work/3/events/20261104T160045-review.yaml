@@ -1,0 +1,15 @@
+node: review
+kind: checkpoint
+sha: c6a7e44b6d40546503a22f1dc77ea1d1198d14cf
+summary: 観点レビュー完了（指摘 3 件・すべて Minor）
+phase: rules
+detail: |
+  quality: 指摘 3 件（iPad 対応の欠落・日本語の設定手順に表示名を固定・iOS 15 の設定名）。日英の文意は一致
+  refactoring: 該当なし（文言のみ）
+  conventions: 該当なし（矢印・リンク・改定履歴の書き方が既存と揃っている）
+  security: 該当なし（静的 HTML、外部リンクは apple.com の公式 URL のみ）
+  performance: 該当なし（文言のみ）
+  error-handling: 該当なし（処理なし）
+  test: 該当なし（静的 HTML）
+  計画との整合: 新規指摘なし。変更は spec FR-8〜10 の範囲内、追跡物に絶対パスなし（git grep）、decision 1 件あり、spec draft で AC-n 未定義のため #3 は対象外。前回 Minor（第 12 条の同日適用・人の確認待ち）は open のまま、今回の iOS 追記も同日適用としたので確認範囲が広がった
+  アプリ実態との照合: origin/main 1b64f41 と一致（Bundle ID room.check.pdf、CFBundleDisplayName Room Check PDF、NSCamera/NSLocationWhenInUse/NSUserTracking、ATT は UMP 経由、apps.apple.com/account/subscriptions、Hive と写真は Documents 配下で backup 除外指定なし、加速度は accelerometerEventStream のみで許可不要）。食い違いは TARGETED_DEVICE_FAMILY 1,2（iPad）と IPHONEOS_DEPLOYMENT_TARGET 15.0

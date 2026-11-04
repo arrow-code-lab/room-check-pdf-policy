@@ -1,0 +1,7 @@
+node: review
+kind: run
+status: success
+outcome: clean
+to: pr
+model: claude-opus-5-5
+summary: "iOS 対応の再レビュー: Major 0、Minor 3 新規（iPad 対象外の記載・設定手順の表示名・iOS 15 の設定名）＋前回の第12条 1 件"
