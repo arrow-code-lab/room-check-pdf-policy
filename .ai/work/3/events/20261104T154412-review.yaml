@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Major
+at: terms.html:34
+fix: "日英の冒頭（terms.html:34 / :107）に効力発生日を明記し（例: 最終改定日 2026年11月5日 / 効力発生日 2026年11月X日、公開日より後）、変更の内容（第 3 条に入居者モードの削除制約を追記）を本ページ上で告知する一文を加える。今回の追記がアプリの既存の挙動の説明にとどまり第 12 条の「変更」に当たらないと判断するなら、その判断を decision に残して人の確認を取る"
+state: open
+summary: 利用規約を改定したのに、第 12 条が約束する変更内容と効力発生日の事前告知が無い
+body: "The Terms are changed and take effect as soon as they're published, but Article 12 of the Terms (line 93/166) promises to announce the changes and their effective date on the page in advance. 故障シナリオ: The merge goes live on GitHub Pages with only '最終改定日: 2026年11月5日'. There is no advance notice and no 効力発生日 (effective date). That breaks the operator's own Article 12 and the 民法548条の4 procedure it cites, so the change may not bind existing users.（出典: /code-review）"

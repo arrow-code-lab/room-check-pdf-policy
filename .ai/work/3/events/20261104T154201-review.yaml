@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:111
+fix: 「本アプリが端末内に保存したすべてのデータ」/「all data the App has stored on the device」とし、「共有・保存先のアプリへ渡した PDF は、そのアプリで削除してください」の一文を日英に添える
+state: open
+summary: 「端末内のすべてのデータを削除するには」が、共有・保存先へ渡した PDF まで消えるように読める
+body: 7 章（日 index.html:111 / 英 index.html:216）で「完了した点検を含め、端末内のすべてのデータを削除するには、本アプリをアンインストールするか…「ストレージを消去」を実行してください」/「To delete all data on the device, including completed inspections, uninstall the App, or use "Clear storage"…」と書いている。アンインストールやストレージ消去で消えるのはアプリ専用領域のデータだけで、利用者が共有シート（printing パッケージ）でファイルアプリ・ダウンロード等へ保存した PDF は端末に残る。3 章は「利用者が PDF を共有した場合を除きます」と書いているが、7 章の文だけを読むと共有済みの PDF も消えると受け取れる。

@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:111
+fix: 「点検・写真等を個別に削除できます（物件・号室の削除は物件管理モード）」のようにし、英語版（:216）も同じに揃える
+state: open
+summary: 物件・号室の個別削除は物件管理モードだけの機能だが、モードを書いていない
+body: "The deletion bullet says properties and units (物件・号室) can be deleted individually 'in the app', but those screens exist only in property-management mode. A tenant-mode user has no such screens. 故障シナリオ: A tenant-mode user reads that properties and units can be deleted and can't find the feature. The sentence should say which mode allows it, as the next sentence already does for tenant mode.（出典: /code-review）"

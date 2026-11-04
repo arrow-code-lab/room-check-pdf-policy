@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Major
+at: .ai/specs/spec-20261105-002914.md:19
+fix: spec の 19 行目は arrow-code-lab/room-check-pdf（origin/main 1b64f41、2026-11-01）のようにリポジトリ名とコミットだけにする。review.html の meta / data-key はリポジトリ相対（.ai/specs/assets/20261105-002914|…）に置き換える。キットのスクリプトが絶対パスを書き込んでいるなら、その旨を concern に残す
+state: open
+summary: 追跡物（spec と確認ページ）に開発機の絶対パスが入っている
+body: "計画との整合 #6（追跡物への絶対パスの混入）。.ai/specs/spec-20261105-002914.md:19 に「照合対象: アプリのソース C:/Users/yano/orca/room-check-pdf（実物は区切りが円記号）」とあり、.ai/specs/assets/20261105-002914/review.html:5（meta fak-review の content）と :75（main の data-key）にも C:/Users/yano/orca/workspaces/room-check-pdf-policy/ポリシー確認/.ai/specs/assets/20261105-002914 が入っている。どちらも git 追跡され PR #4 の差分に含まれる。開発者のローカルのユーザー名・フォルダ構成がリポジトリに残り、他の環境では意味を持たない。"

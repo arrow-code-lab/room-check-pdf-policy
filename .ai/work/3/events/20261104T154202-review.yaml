@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: .ai/work/3/events
+fix: 次の impl で、文言の判断（参照で済ませた箇所など）を decision、照合で確かめた受入の観点（§1-5 の 4 点）を verification として積む
+state: open
+summary: decision / concern の event が 0 件
+body: "計画との整合 #4。Issue #3 の events には triage / requirements / impl の run しかなく、kind: decision・concern が 1 件も無い。impl の summary は「静的 HTML でビルド・テスト手段は無く、タグの対応のみ確認」とあるが、kind: verification も無い（spec は draft で AC-n が無いため #3 は判定対象外とした）。文言の選び方（例: 5 章は 7 章を参照させる、利用規約は削除方法をポリシーへ委ねる）の判断がどこにも残っていない。"

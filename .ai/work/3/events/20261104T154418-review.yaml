@@ -1,0 +1,10 @@
+node: review
+kind: checkpoint
+sha: 50250e1142899656d15ac8bfdb016535d5c6f0d3
+summary: code-review 取り込み完了（指摘 7 件・採用 6・重複 1・範囲外 0）
+phase: code-review
+detail: |
+  実行: 実行した / target: PR #4 / effort: medium
+  手順 0 の差分ファイル一覧: 9 ファイル（gh pr diff 4 --name-only）
+  検算: 一覧内の file を持つ指摘 7 件 / 一覧外 0 件
+  採用 6 件（Critical 0 / Major 1 / Minor 5）、重複で落とした 1 件（review.html の絶対パス。観点レビューの Major と同趣旨）、範囲外 0 件

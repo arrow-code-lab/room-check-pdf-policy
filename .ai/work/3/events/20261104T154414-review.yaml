@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:93
+fix: 5 章を「アプリ内で削除するか、本アプリをアンインストールする（または Android の設定からストレージを消去する）まで」とし、日英（:93 / :198）を揃える
+state: open
+summary: 5 章の保持期間の終わりに「ストレージを消去」が無く、7 章と揃っていない
+body: "Section 5 still names only in-app deletion or uninstalling as the end of retention, while Section 7 adds Android's 'ストレージを消去' (Clear storage) as a third way to delete everything. 故障シナリオ: A reader of Section 5 (JA line 93, EN line 198) sees two ways data stops being kept, but Section 7 lists three. The policy is inconsistent with itself, and fixing it means editing two places.（出典: /code-review）"

@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:65
+fix: 日英（:65 / :170）のセンサーの段落を「これらの権限で扱うデータは…」の段落の後ろへ移す
+state: open
+summary: 加速度センサーの段落が権限一覧と「これらの権限で扱うデータは…」の間に入り、指す範囲が曖昧
+body: "The accelerometer statement is placed between the permissions list and the paragraph 'これらの権限で扱うデータは…', so the sensor, which needs no permission, now sits inside a passage that is about permissions. 故障シナリオ: Readers may think the 'no sending except when sharing a PDF' rule covers sensor data through 'these permissions', or think the paragraph is about the sensor. A clearer spot is after the storage-permission paragraph, or as its own sub-item.（出典: /code-review）"

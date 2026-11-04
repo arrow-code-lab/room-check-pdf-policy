@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: index.html:111
+fix: "10 章（日 index.html:124 付近 / 英 :229 付近）に改定履歴（2026年11月5日: パッケージ名の訂正、物件情報・加速度センサー・削除の制約の追記）を日英で加える。アプリの挙動は変わっておらず記載の明確化である旨も書く"
+state: open
+summary: 削除の制約を明記した改定を、10 章が約束する「重要な変更の告知」なしで出している
+body: "The privacy policy now says completed tenant-mode inspections can't be deleted in the app (a narrowing of the user's deletion right), but nothing on the page announces it. Section 10 promises that material changes will be announced on the published page. 故障シナリオ: A user who read the earlier policy ('アプリ内で削除できる') gets no notice of the new limit. Only the date changes, which goes against the policy's own Section 10 on revisions.（出典: /code-review）"

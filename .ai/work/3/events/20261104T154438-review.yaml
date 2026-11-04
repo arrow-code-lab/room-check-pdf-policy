@@ -1,0 +1,6 @@
+node: review
+kind: revert
+from: review
+to: impl
+reason: Major 2 件 open（利用規約 第 12 条の事前告知・効力発生日が無い／追跡物に絶対パス）
+summary: Major 2 件 open（利用規約 第 12 条の事前告知・効力発生日が無い／追跡物に絶対パス）

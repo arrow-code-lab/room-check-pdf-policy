@@ -1,0 +1,15 @@
+node: review
+kind: checkpoint
+sha: 50250e1142899656d15ac8bfdb016535d5c6f0d3
+summary: 観点レビュー完了（指摘 3 件）
+phase: rules
+detail: |
+  quality: 指摘 1 件（7 章の全消去の文が共有済み PDF まで含むように読める・Minor）
+  refactoring: 該当なし（日英の重複は文書の構成上必要。他ファイルへの波及は grep で確認済み）
+  conventions: 該当なし（既存の章立て・表記・矢印の書き方に合っている）
+  security: 該当なし（静的 HTML、機密・キー・入力処理なし）
+  performance: 該当なし（文言のみの変更）
+  error-handling: 該当なし（処理なし）
+  test: 該当なし（静的 HTML でテスト対象なし）
+  計画との整合: 指摘 2 件（#6 絶対パス混入・Major / #4 decision・concern 0 件・Minor）。#3 は spec draft で AC-n 未定義のため対象外
+  アプリ実態との照合: FR-1〜FR-7 すべて origin/main 1b64f41 と一致、日英一致、既存記述の破壊なし

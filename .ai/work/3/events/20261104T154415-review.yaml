@@ -1,0 +1,8 @@
+node: review
+kind: finding
+severity: Minor
+at: terms.html:46
+fix: 日英（terms.html:46 / :119）の「プライバシーポリシー」「Privacy Policy」を ./index.html へのリンクにし、「第 7 章」「Section 7」を添える
+state: open
+summary: 利用規約 第 3 条の追記がプライバシーポリシーへリンクしていない
+body: "The new Article 3 bullet sends readers to 'プライバシーポリシーに定めるとおり' for deletion steps without a link, although the bullet two lines up links `./index.html`. 故障シナリオ: The text gives no direct path to the actual deletion steps (Section 7, Clear storage), so users have to go back to the earlier bullet or search for the policy. The English version at line 119 has the same problem.（出典: /code-review）"
