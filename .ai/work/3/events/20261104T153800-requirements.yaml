@@ -1,0 +1,11 @@
+node: requirements
+kind: run
+status: success
+outcome: "案A: Android 版の実態に合わせて直す"
+to: impl
+sha: 3980a901f9a3fe28ac60b93d41a20412326e1e74
+artifacts:
+  - .ai/specs/spec-20261105-002914.md
+  - .ai/specs/assets/20261105-002914/review.html
+model: claude-opus-5-5
+summary: 案A を採択し spec-20261105-002914.md を仕上げた（食い違い 6 件・FR-1〜7）。アプリ側の掲載文は room-check-pdf#53 に起票。まだ検証されていない
