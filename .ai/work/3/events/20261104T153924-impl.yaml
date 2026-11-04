@@ -1,0 +1,8 @@
+node: impl
+kind: run
+status: success
+outcome: 実装完了
+to: review
+sha: 50250e1142899656d15ac8bfdb016535d5c6f0d3
+model: claude-opus-5-5
+summary: FR-1〜7 を index.html / terms.html の日英両方に反映（特商法は変更なし）。静的 HTML でビルド・テスト手段は無く、タグの対応のみ確認
