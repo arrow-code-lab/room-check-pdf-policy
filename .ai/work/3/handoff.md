@@ -29,7 +29,7 @@ artifacts:
   requirements:
     - .ai/specs/spec-20261105-002914.md
     - .ai/specs/assets/20261105-002914/review.html
-events: 55
+events: 57
 ---
 
 # Issue #3 の索引
@@ -38,11 +38,7 @@ events: 55
 
 - 現在地: `pr-success`（outcome: ready）
 - フロー: `ai-default-medium` / 通過: `triage` → `requirements` → `impl` → `review` → `pr` → `fix-any`
-- open な指摘: 1 件（Major 以上 0 件）
-
-## open な指摘
-
-- Minor `terms.html:101` 利用規約の同日適用（第 12 条の事前告知を経ない）判断が人の確認待ちのまま … `events/20261104T154801-review.yaml`
+- open な指摘: 0 件（Major 以上 0 件）
 
 ## 成果物
 
@@ -68,3 +64,4 @@ events: 55
 ## 記録（判断・懸念・検証・環境・質問）
 
 - decision [impl] 利用規約の追記は既存動作の説明であり第12条の『変更』（事前告知が要る）に当たらないと判断し、改定履歴で同日適用と明示した。法的判断として人の確認を求める。iOS 版の記載は案Aの範囲外として入れない … `events/20261104T154647-impl.yaml`
+- decision [fix-any] 運営者確認: Android・iOS とも公開前のため、利用規約の改定を同日適用としても第12条（事前告知）の問題は無い（2026-11-05 依頼者回答） … `events/20261104T160744-fix-any.yaml`

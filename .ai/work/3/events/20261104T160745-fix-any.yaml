@@ -1,0 +1,6 @@
+node: fix-any
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154801-review.yaml
+summary: "運営者が確認: 両 OS とも公開前で既存の利用者がいないため、同日適用で問題なし"
