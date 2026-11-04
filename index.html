@@ -33,10 +33,10 @@
   <!-- ============ 日本語版 ============ -->
   <section id="lang-ja">
     <h1>プライバシーポリシー（入居前チェック）</h1>
-    <p class="meta"><strong>最終改定日: 2026年10月30日 / 施行日: 2026年7月1日（初版）</strong></p>
+    <p class="meta"><strong>最終改定日: 2026年11月5日 / 施行日: 2026年7月1日（初版）</strong></p>
 
     <h2>1. 適用範囲とアプリ情報</h2>
-    <p>本プライバシーポリシー（以下「本ポリシー」）は、個人開発者（Individual Developer）〔運営者: Arrow Code Lab〕が提供するモバイルアプリケーション「入居前チェック」（パッケージ名: room_check_pdf、以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
+    <p>本プライバシーポリシー（以下「本ポリシー」）は、個人開発者（Individual Developer）〔運営者: Arrow Code Lab〕が提供するモバイルアプリケーション「入居前チェック」（パッケージ名: room.check.pdf、以下「本アプリ」）における利用者情報の取り扱いについて定めるものです。</p>
     <p>本アプリは、賃貸物件の入居前チェックを支援するアプリケーションであり、Android 端末を主な対象として提供されます。</p>
     <p>本アプリは、欧州経済領域（EEA）、英国およびスイスでは提供していません。</p>
 
@@ -45,7 +45,7 @@
     <ul>
       <li><strong>室内点検写真</strong>: 端末のカメラで撮影した写真。</li>
       <li><strong>入力テキスト</strong>: チェック項目の状態、コメント等、利用者が入力したテキスト。</li>
-      <li><strong>物件情報</strong>: 物件名・部屋番号等、利用者が入力した情報。</li>
+      <li><strong>物件情報</strong>: 物件名・住所・郵便番号・部屋番号等、利用者が入力した情報。</li>
       <li><strong>日付情報</strong>: 点検日等。</li>
       <li><strong>点検者情報</strong>: 氏名・会社名・住所・電話番号等、利用者が設定画面で入力した情報（PDF レポートへの記載に使用します）。</li>
       <li><strong>取り込んだ PDF テンプレート</strong>: 利用者が端末から取り込んだ PDF（取引先の書式等）を画像に変換したものと、差し込み項目の配置の設定。</li>
@@ -62,6 +62,7 @@
       <li><strong>カメラ（CAMERA）</strong>: 室内点検写真の撮影に使用します。</li>
       <li><strong>位置情報（ACCESS_FINE_LOCATION、ACCESS_COARSE_LOCATION）</strong>: 写真の撮影位置の記録に使用します。権限を求める前に、アプリ内で用途を説明します。位置はカメラ画面を開いている間のみ取得し、バックグラウンドでは取得しません。設定画面の「写真に撮影位置を記録する」をオフにした場合は、権限を許可していても位置を取得しません。許可しない場合やオフにした場合も撮影はでき、撮影位置が記録されないだけです。</li>
     </ul>
+    <p>このほか、撮影画面の水準器（傾きの表示）のために端末の加速度センサーを使用します。この利用に権限は必要なく、センサーの値は傾きの表示にのみ使い、保存・送信しません。</p>
     <p>写真・PDF はアプリ専用の保存領域に保存するため、本アプリはストレージや写真ライブラリへのアクセス権限を使用しません。</p>
     <p>これらの権限で扱うデータは端末内に保持され、運営者や第三者へ送信されません（利用者が PDF を共有した場合を除きます）。</p>
 
@@ -89,7 +90,7 @@
     <h2>5. データの保存場所と保持期間</h2>
     <ul>
       <li>第 2 章に記載した利用者の入力・撮影データは、<strong>すべて利用者の端末内に保存</strong>されます。</li>
-      <li>これらのデータは、利用者がアプリ内で削除操作を行うか、本アプリをアンインストールするまで端末内に保持されます。</li>
+      <li>これらのデータは、利用者がアプリ内で削除操作を行うか、本アプリをアンインストールするまで端末内に保持されます。ただし、入居者モードで完了した点検は、アプリ内では削除できません（第 7 章）。</li>
       <li>運営者はこれらのデータを保有・保管しません。</li>
       <li>AdMob・Google Play の課金を通じて Google が収集するデータの保持期間は、Google のプライバシーポリシーに従います。</li>
     </ul>
@@ -107,7 +108,7 @@
 
     <h2>7. 利用者の権利（データの削除・広告 ID のリセット）</h2>
     <ul>
-      <li><strong>端末内データの削除</strong>: 本アプリ内の削除機能を利用するか、本アプリをアンインストールすることで、端末内に保存された点検データ・写真・物件情報等を削除できます。</li>
+      <li><strong>端末内データの削除</strong>: 本アプリ内の削除機能で、点検・物件・号室・写真等を個別に削除できます。ただし、入居者モードで完了した点検は、アプリ内では削除できません。完了した点検を含め、端末内のすべてのデータを削除するには、本アプリをアンインストールするか、Android の「設定」→「アプリ」→ 本アプリ →「ストレージ」（機種により「ストレージとキャッシュ」）から「ストレージを消去」を実行してください。削除したデータは復元できません。</li>
       <li><strong>広告識別子（Advertising ID）のリセット／削除</strong>: Android の「設定」→「Google」→「広告」から、広告 ID のリセットまたは削除、およびパーソナライズ広告のオプトアウトが可能です。</li>
       <li><strong>広告に関する同意の変更</strong>: 同意が必要な地域では、本アプリの設定画面の「広告のプライバシー設定」から変更できます。</li>
       <li><strong>撮影位置の記録の停止</strong>: 本アプリの設定画面の「写真に撮影位置を記録する」をオフにするか、Android の「設定」→「アプリ」→ 本アプリ →「権限」から位置情報の許可を取り消すことで、いつでも停止できます。停止した後に撮影した写真には撮影位置が記録されません。撮影済みの写真に記録された位置は消えません。</li>
@@ -122,8 +123,8 @@
     <h2>10. 本ポリシーの改定</h2>
     <p>運営者は、法令の変更やサービス内容の変更に応じて、本ポリシーを改定することがあります。重要な変更を行う場合は、本ポリシーの公開ページ上で告知します。改定後の本ポリシーは、公開ページに掲載された時点から効力を生じます。</p>
     <ul>
-      <li>最終改定日: 2026年10月30日</li>
-      <li>公開 URL: https://arrow-code-lab.github.io/room-check-pdf-policy</li>
+      <li>最終改定日: 2026年11月5日</li>
+      <li>公開 URL: https://arrow-code-lab.github.io/room-check-pdf-policy/</li>
       <li>関連文書: <a href="./terms.html">利用規約</a> / <a href="./legal.html">特定商取引法に基づく表記</a></li>
     </ul>
 
@@ -137,10 +138,10 @@
   <!-- ============ English version ============ -->
   <section id="lang-en" hidden>
     <h1>Privacy Policy (Room Check PDF)</h1>
-    <p class="meta"><strong>Last updated: October 30, 2026 / Effective date: July 1, 2026 (initial version)</strong></p>
+    <p class="meta"><strong>Last updated: November 5, 2026 / Effective date: July 1, 2026 (initial version)</strong></p>
 
     <h2>1. Scope and App Information</h2>
-    <p>This Privacy Policy (the "Policy") sets out how user information is handled in the mobile application "Room Check PDF" (package name: room_check_pdf, the "App"), provided by an Individual Developer [operator: Arrow Code Lab].</p>
+    <p>This Privacy Policy (the "Policy") sets out how user information is handled in the mobile application "Room Check PDF" (package name: room.check.pdf, the "App"), provided by an Individual Developer [operator: Arrow Code Lab].</p>
     <p>The App is an application that assists with pre-move-in inspections of rental properties, and is provided primarily for Android devices.</p>
     <p>The App is not offered in the European Economic Area (EEA), the United Kingdom, or Switzerland.</p>
 
@@ -149,7 +150,7 @@
     <ul>
       <li><strong>Room inspection photos</strong>: Photos taken with the device camera.</li>
       <li><strong>Input text</strong>: Text entered by the user, such as the status of check items and comments.</li>
-      <li><strong>Property information</strong>: Information entered by the user, such as property name and room number.</li>
+      <li><strong>Property information</strong>: Information entered by the user, such as property name, address, postal code, and room number.</li>
       <li><strong>Date information</strong>: Such as the inspection date.</li>
       <li><strong>Inspector information</strong>: Information entered by the user on the settings screen, such as name, company name, address, and phone number (used to include in PDF reports).</li>
       <li><strong>Imported PDF templates</strong>: Images converted from PDFs that the user imports from the device (such as a client's forms), and the placement settings for inserted fields.</li>
@@ -166,6 +167,7 @@
       <li><strong>Camera (CAMERA)</strong>: Used to take room inspection photos.</li>
       <li><strong>Location (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)</strong>: Used to record where photos are taken. The App explains this use before requesting the permission. Location is obtained only while the camera screen is open, and never in the background. If "Record location in photos" is turned off on the settings screen, location is not obtained even if the permission is granted. Photos can still be taken if the permission is not granted or the setting is off; the photo location is simply not recorded.</li>
     </ul>
+    <p>In addition, the App uses the device's accelerometer for the level indicator (tilt display) on the camera screen. No permission is required for this, and the sensor values are used only to show the tilt; they are neither stored nor transmitted.</p>
     <p>Photos and PDFs are saved in the App's private storage area, so the App does not use permissions to access storage or the photo library.</p>
     <p>Data handled through these permissions is retained on the device and is not transmitted to the operator or any third party (except when the user shares a PDF).</p>
 
@@ -193,7 +195,7 @@
     <h2>5. Data Storage Location and Retention Period</h2>
     <ul>
       <li>The user's input and captured data described in Section 2 is <strong>stored entirely on the user's device</strong>.</li>
-      <li>This data is retained on the device until the user deletes it within the App or uninstalls the App.</li>
+      <li>This data is retained on the device until the user deletes it within the App or uninstalls the App. However, inspections completed in tenant mode cannot be deleted within the App (see Section 7).</li>
       <li>The operator does not hold or store this data.</li>
       <li>The retention period for data collected by Google through AdMob and Google Play Billing is governed by Google's Privacy Policy.</li>
     </ul>
@@ -211,7 +213,7 @@
 
     <h2>7. User Rights (Data Deletion and Advertising ID Reset)</h2>
     <ul>
-      <li><strong>Deleting on-device data</strong>: By using the delete function within the App, or by uninstalling the App, the user can delete inspection data, photos, property information, and other data stored on the device.</li>
+      <li><strong>Deleting on-device data</strong>: The user can delete inspections, properties, units, photos, and other items individually using the delete function within the App. However, inspections completed in tenant mode cannot be deleted within the App. To delete all data on the device, including completed inspections, uninstall the App, or use "Clear storage" from the Android "Settings" &rarr; "Apps" &rarr; this App &rarr; "Storage" (or "Storage &amp; cache", depending on the device). Deleted data cannot be restored.</li>
       <li><strong>Resetting / deleting the Advertising ID</strong>: From the Android "Settings" &rarr; "Google" &rarr; "Ads", the user can reset or delete the advertising ID and opt out of personalized advertising.</li>
       <li><strong>Changing consent for advertising</strong>: In regions where consent is required, the user can change it from "Ad privacy settings" on the App's settings screen.</li>
       <li><strong>Stopping photo location recording</strong>: The user can stop this at any time by turning off "Record location in photos" on the App's settings screen, or by revoking the location permission from the Android "Settings" &rarr; "Apps" &rarr; this App &rarr; "Permissions". Photos taken after stopping will not include the photo location. Locations already recorded in photos are not removed.</li>
@@ -226,7 +228,7 @@
     <h2>10. Changes to This Policy</h2>
     <p>The operator may revise this Policy in response to changes in laws or in the service. If any material change is made, it will be announced on the published page of this Policy. The revised Policy takes effect from the time it is posted on the published page.</p>
     <ul>
-      <li>Last updated: October 30, 2026</li>
+      <li>Last updated: November 5, 2026</li>
       <li>Published URL: https://arrow-code-lab.github.io/room-check-pdf-policy/</li>
       <li>Related documents: <a href="./terms.html">Terms of Service</a> / <a href="./legal.html">Legal Notice</a></li>
     </ul>
