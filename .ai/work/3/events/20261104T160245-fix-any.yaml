@@ -1,0 +1,6 @@
+node: fix-any
+kind: finding
+severity: minor
+state: done
+ref: 20261104T160038-review.yaml
+summary: iOS 15 の「プライバシー」と「設定 → 本アプリ → トラッキングを許可」の道も追記

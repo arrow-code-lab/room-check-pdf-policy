@@ -14,7 +14,7 @@ evidence:
   open_major: 0
   merged: false
   accepted: false
-passed: [triage, requirements, impl, review, pr]
+passed: [triage, requirements, impl, review, pr, fix-any]
 attempts: { impl: 2, review: 2, requirements: 1, pr: 1 }
 edges:
   triage->requirements: 1
@@ -29,7 +29,7 @@ artifacts:
   requirements:
     - .ai/specs/spec-20261105-002914.md
     - .ai/specs/assets/20261105-002914/review.html
-events: 51
+events: 55
 ---
 
 # Issue #3 の索引
@@ -37,15 +37,12 @@ events: 51
 この索引は `events/` から機械的に生成される写しです。手で書き換えないでください（次の記録で上書きされます）。
 
 - 現在地: `pr-success`（outcome: ready）
-- フロー: `ai-default-medium` / 通過: `triage` → `requirements` → `impl` → `review` → `pr`
-- open な指摘: 4 件（Major 以上 0 件）
+- フロー: `ai-default-medium` / 通過: `triage` → `requirements` → `impl` → `review` → `pr` → `fix-any`
+- open な指摘: 1 件（Major 以上 0 件）
 
 ## open な指摘
 
 - Minor `terms.html:101` 利用規約の同日適用（第 12 条の事前告知を経ない）判断が人の確認待ちのまま … `events/20261104T154801-review.yaml`
-- Minor `legal.html:51` iOS の対象端末を iPhone に限っているが、アプリは iPad にも対応している（TARGETED_DEVICE_FAMILY = "1,2"） … `events/20261104T160036-review.yaml`
-- Minor `index.html:118` 日本語版の iOS の設定の場所に表示名「Room Check PDF」を固定で書いており、予定している日本語名のローカライズ後に食い違う … `events/20261104T160037-review.yaml`
-- Minor `index.html:116` トラッキングの設定の場所「プライバシーとセキュリティ」は iOS 16 以降の名称で、アプリの最小 OS（iOS 15.0）では「プライバシー」 … `events/20261104T160038-review.yaml`
 
 ## 成果物
 

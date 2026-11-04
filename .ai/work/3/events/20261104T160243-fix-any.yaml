@@ -1,0 +1,6 @@
+node: fix-any
+kind: finding
+severity: minor
+state: done
+ref: 20261104T160036-review.yaml
+summary: iOS の対象を iPhone・iPad に（プライバシーポリシー・特商法の日英）

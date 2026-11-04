@@ -1,0 +1,6 @@
+node: fix-any
+kind: run
+status: success
+sha: 30d77b8957a7e661e7e1cb032c090273a4697cc0
+model: claude-opus-5-5
+summary: Minor 3 件（iPad・表示名・iOS 15 の設定名）を 1 指摘 1 コミットで修正し push

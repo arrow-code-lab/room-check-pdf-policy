@@ -1,0 +1,6 @@
+node: fix-any
+kind: finding
+severity: minor
+state: done
+ref: 20261104T160037-review.yaml
+summary: 位置情報の設定手順の表示名を「本アプリ / this App」に
