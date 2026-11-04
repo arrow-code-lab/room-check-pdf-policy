@@ -1,0 +1,8 @@
+node: impl
+kind: run
+status: success
+outcome: 実装完了
+to: review
+sha: c6a7e44b6d40546503a22f1dc77ea1d1198d14cf
+model: claude-opus-5-5
+summary: "FR-8〜10: iOS 版の記載を 3 文書の日英に追加（IDFA/ATT・App Store 課金・iCloud バックアップ・Apple 標準 EULA・iOS の設定）"
