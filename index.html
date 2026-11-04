@@ -62,9 +62,9 @@
       <li><strong>カメラ（CAMERA）</strong>: 室内点検写真の撮影に使用します。</li>
       <li><strong>位置情報（ACCESS_FINE_LOCATION、ACCESS_COARSE_LOCATION）</strong>: 写真の撮影位置の記録に使用します。権限を求める前に、アプリ内で用途を説明します。位置はカメラ画面を開いている間のみ取得し、バックグラウンドでは取得しません。設定画面の「写真に撮影位置を記録する」をオフにした場合は、権限を許可していても位置を取得しません。許可しない場合やオフにした場合も撮影はでき、撮影位置が記録されないだけです。</li>
     </ul>
-    <p>このほか、撮影画面の水準器（傾きの表示）のために端末の加速度センサーを使用します。この利用に権限は必要なく、センサーの値は傾きの表示にのみ使い、保存・送信しません。</p>
     <p>写真・PDF はアプリ専用の保存領域に保存するため、本アプリはストレージや写真ライブラリへのアクセス権限を使用しません。</p>
     <p>これらの権限で扱うデータは端末内に保持され、運営者や第三者へ送信されません（利用者が PDF を共有した場合を除きます）。</p>
+    <p>このほか、撮影画面の水準器（傾きの表示）のために端末の加速度センサーを使用します。この利用に権限は必要なく、センサーの値は傾きの表示にのみ使い、保存・送信しません。</p>
 
     <h2>4. 第三者サービス（広告・課金）</h2>
     <p>本アプリは、広告配信のために Google が提供する <strong>Google AdMob（Google Mobile Ads）</strong> を利用しています。AdMob を通じて、以下のとおりデータが送信されます。</p>
@@ -90,7 +90,7 @@
     <h2>5. データの保存場所と保持期間</h2>
     <ul>
       <li>第 2 章に記載した利用者の入力・撮影データは、<strong>すべて利用者の端末内に保存</strong>されます。</li>
-      <li>これらのデータは、利用者がアプリ内で削除操作を行うか、本アプリをアンインストールするまで端末内に保持されます。ただし、入居者モードで完了した点検は、アプリ内では削除できません（第 7 章）。</li>
+      <li>これらのデータは、利用者がアプリ内で削除操作を行うか、本アプリのストレージを消去するか、本アプリをアンインストールするまで端末内に保持されます。ただし、入居者モードで完了した点検は、アプリ内では削除できません（第 7 章）。</li>
       <li>運営者はこれらのデータを保有・保管しません。</li>
       <li>AdMob・Google Play の課金を通じて Google が収集するデータの保持期間は、Google のプライバシーポリシーに従います。</li>
     </ul>
@@ -108,7 +108,7 @@
 
     <h2>7. 利用者の権利（データの削除・広告 ID のリセット）</h2>
     <ul>
-      <li><strong>端末内データの削除</strong>: 本アプリ内の削除機能で、点検・物件・号室・写真等を個別に削除できます。ただし、入居者モードで完了した点検は、アプリ内では削除できません。完了した点検を含め、端末内のすべてのデータを削除するには、本アプリをアンインストールするか、Android の「設定」→「アプリ」→ 本アプリ →「ストレージ」（機種により「ストレージとキャッシュ」）から「ストレージを消去」を実行してください。削除したデータは復元できません。</li>
+      <li><strong>端末内データの削除</strong>: 本アプリ内の削除機能で、点検・写真等を個別に削除できます（物件・号室の削除は物件管理モードで行えます）。ただし、入居者モードで完了した点検は、アプリ内では削除できません。完了した点検を含め、端末内に保存された本アプリのデータをすべて削除するには、本アプリをアンインストールするか、Android の「設定」→「アプリ」→ 本アプリ →「ストレージ」（機種により「ストレージとキャッシュ」）から「ストレージを消去」を実行してください。削除したデータは復元できません。なお、利用者が共有・保存した PDF は共有先に残り、これらの方法では削除されません。</li>
       <li><strong>広告識別子（Advertising ID）のリセット／削除</strong>: Android の「設定」→「Google」→「広告」から、広告 ID のリセットまたは削除、およびパーソナライズ広告のオプトアウトが可能です。</li>
       <li><strong>広告に関する同意の変更</strong>: 同意が必要な地域では、本アプリの設定画面の「広告のプライバシー設定」から変更できます。</li>
       <li><strong>撮影位置の記録の停止</strong>: 本アプリの設定画面の「写真に撮影位置を記録する」をオフにするか、Android の「設定」→「アプリ」→ 本アプリ →「権限」から位置情報の許可を取り消すことで、いつでも停止できます。停止した後に撮影した写真には撮影位置が記録されません。撮影済みの写真に記録された位置は消えません。</li>
@@ -124,6 +124,7 @@
     <p>運営者は、法令の変更やサービス内容の変更に応じて、本ポリシーを改定することがあります。重要な変更を行う場合は、本ポリシーの公開ページ上で告知します。改定後の本ポリシーは、公開ページに掲載された時点から効力を生じます。</p>
     <ul>
       <li>最終改定日: 2026年11月5日</li>
+      <li>改定履歴: 2026年11月5日 — パッケージ名の訂正、物件情報（住所・郵便番号）と加速度センサーの記載の追加、データの削除方法（入居者モードで完了した点検はアプリ内で削除できないこと）の明記。いずれも従来からの本アプリの動作の記載であり、情報の取り扱いを変更するものではありません。</li>
       <li>公開 URL: https://arrow-code-lab.github.io/room-check-pdf-policy/</li>
       <li>関連文書: <a href="./terms.html">利用規約</a> / <a href="./legal.html">特定商取引法に基づく表記</a></li>
     </ul>
@@ -167,9 +168,9 @@
       <li><strong>Camera (CAMERA)</strong>: Used to take room inspection photos.</li>
       <li><strong>Location (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)</strong>: Used to record where photos are taken. The App explains this use before requesting the permission. Location is obtained only while the camera screen is open, and never in the background. If "Record location in photos" is turned off on the settings screen, location is not obtained even if the permission is granted. Photos can still be taken if the permission is not granted or the setting is off; the photo location is simply not recorded.</li>
     </ul>
-    <p>In addition, the App uses the device's accelerometer for the level indicator (tilt display) on the camera screen. No permission is required for this, and the sensor values are used only to show the tilt; they are neither stored nor transmitted.</p>
     <p>Photos and PDFs are saved in the App's private storage area, so the App does not use permissions to access storage or the photo library.</p>
     <p>Data handled through these permissions is retained on the device and is not transmitted to the operator or any third party (except when the user shares a PDF).</p>
+    <p>In addition, the App uses the device's accelerometer for the level indicator (tilt display) on the camera screen. No permission is required for this, and the sensor values are used only to show the tilt; they are neither stored nor transmitted.</p>
 
     <h2>4. Third-Party Services (Advertising and Billing)</h2>
     <p>The App uses <strong>Google AdMob (Google Mobile Ads)</strong>, provided by Google, to serve advertisements. Data is transmitted through AdMob as follows.</p>
@@ -195,7 +196,7 @@
     <h2>5. Data Storage Location and Retention Period</h2>
     <ul>
       <li>The user's input and captured data described in Section 2 is <strong>stored entirely on the user's device</strong>.</li>
-      <li>This data is retained on the device until the user deletes it within the App or uninstalls the App. However, inspections completed in tenant mode cannot be deleted within the App (see Section 7).</li>
+      <li>This data is retained on the device until the user deletes it within the App, clears the App's storage, or uninstalls the App. However, inspections completed in tenant mode cannot be deleted within the App (see Section 7).</li>
       <li>The operator does not hold or store this data.</li>
       <li>The retention period for data collected by Google through AdMob and Google Play Billing is governed by Google's Privacy Policy.</li>
     </ul>
@@ -213,7 +214,7 @@
 
     <h2>7. User Rights (Data Deletion and Advertising ID Reset)</h2>
     <ul>
-      <li><strong>Deleting on-device data</strong>: The user can delete inspections, properties, units, photos, and other items individually using the delete function within the App. However, inspections completed in tenant mode cannot be deleted within the App. To delete all data on the device, including completed inspections, uninstall the App, or use "Clear storage" from the Android "Settings" &rarr; "Apps" &rarr; this App &rarr; "Storage" (or "Storage &amp; cache", depending on the device). Deleted data cannot be restored.</li>
+      <li><strong>Deleting on-device data</strong>: The user can delete inspections, photos, and other items individually using the delete function within the App (properties and units can be deleted in property manager mode). However, inspections completed in tenant mode cannot be deleted within the App. To delete all of the App's data stored on the device, including completed inspections, uninstall the App, or use "Clear storage" from the Android "Settings" &rarr; "Apps" &rarr; this App &rarr; "Storage" (or "Storage &amp; cache", depending on the device). Deleted data cannot be restored. Note that PDFs the user has shared or saved remain at their destination and are not deleted by these methods.</li>
       <li><strong>Resetting / deleting the Advertising ID</strong>: From the Android "Settings" &rarr; "Google" &rarr; "Ads", the user can reset or delete the advertising ID and opt out of personalized advertising.</li>
       <li><strong>Changing consent for advertising</strong>: In regions where consent is required, the user can change it from "Ad privacy settings" on the App's settings screen.</li>
       <li><strong>Stopping photo location recording</strong>: The user can stop this at any time by turning off "Record location in photos" on the App's settings screen, or by revoking the location permission from the Android "Settings" &rarr; "Apps" &rarr; this App &rarr; "Permissions". Photos taken after stopping will not include the photo location. Locations already recorded in photos are not removed.</li>
@@ -229,6 +230,7 @@
     <p>The operator may revise this Policy in response to changes in laws or in the service. If any material change is made, it will be announced on the published page of this Policy. The revised Policy takes effect from the time it is posted on the published page.</p>
     <ul>
       <li>Last updated: November 5, 2026</li>
+      <li>Revision history: November 5, 2026 — Corrected the package name; added property information (address and postal code) and the accelerometer; clarified how to delete data (inspections completed in tenant mode cannot be deleted within the App). All of these describe the App's existing behavior and do not change how information is handled.</li>
       <li>Published URL: https://arrow-code-lab.github.io/room-check-pdf-policy/</li>
       <li>Related documents: <a href="./terms.html">Terms of Service</a> / <a href="./legal.html">Legal Notice</a></li>
     </ul>
