@@ -1,0 +1,15 @@
+node: review
+kind: checkpoint
+sha: c668aa7dbe761147f4314d67dbd66d1de24fbacd
+summary: 観点レビュー完了（指摘 1 件）
+phase: rules
+detail: |
+  quality: 該当なし（前回指摘 9 件の修正を 50250e1..c668aa7 で確認。日英の文意一致、5 章と 7 章の削除手段が揃った）
+  refactoring: 該当なし（文言のみ）
+  conventions: 該当なし（改定履歴の置き方・矢印・リンクの書き方が既存と揃っている）
+  security: 該当なし（静的 HTML、機密・入力処理なし）
+  performance: 該当なし（文言のみ）
+  error-handling: 該当なし（処理なし）
+  test: 該当なし（静的 HTML でテスト対象なし）
+  計画との整合: 指摘 1 件（第 12 条の同日適用判断が人の確認待ち・Minor）。#6 絶対パスは追跡物から消えたことを git grep で確認。#4 decision 1 件あり。#3 は spec draft で AC-n 未定義のため対象外
+  アプリ実態との照合: origin/main 1b64f41 と一致（入居者モード・物件管理モードの名称、入居者モード完了点検の削除不可 finishNoticeTenant、未完了点検・写真の削除可）
