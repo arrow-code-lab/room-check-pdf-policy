@@ -2,8 +2,8 @@
 issue: 3
 pr: 4
 flow: ai-default-medium
-status: requirements-success
-outcome: "案A: Android 版の実態に合わせて直す"
+status: impl-running
+outcome: null
 evidence:
   spec_status: draft
   has_issue: true
@@ -25,14 +25,14 @@ artifacts:
   requirements:
     - .ai/specs/spec-20261105-002914.md
     - .ai/specs/assets/20261105-002914/review.html
-events: 3
+events: 4
 ---
 
 # Issue #3 の索引
 
 この索引は `events/` から機械的に生成される写しです。手で書き換えないでください（次の記録で上書きされます）。
 
-- 現在地: `requirements-success`（outcome: 案A: Android 版の実態に合わせて直す）
+- 現在地: `impl-running`
 - フロー: `ai-default-medium` / 通過: `triage` → `requirements`
 - open な指摘: 0 件（Major 以上 0 件）
 
