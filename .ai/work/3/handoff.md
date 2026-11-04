@@ -2,8 +2,8 @@
 issue: 3
 pr: 4
 flow: ai-default-medium
-status: requirements-success
-outcome: "案B: iOS 版にも対応させて直す（選び直し）"
+status: impl-running
+outcome: null
 evidence:
   spec_status: draft
   has_issue: true
@@ -15,7 +15,7 @@ evidence:
   merged: false
   accepted: false
 passed: [triage, requirements, impl, review, pr]
-attempts: { impl: 1, review: 1, requirements: 1 }
+attempts: { impl: 2, review: 1, requirements: 1 }
 edges:
   triage->requirements: 1
   requirements->impl: 2
@@ -29,14 +29,14 @@ artifacts:
   requirements:
     - .ai/specs/spec-20261105-002914.md
     - .ai/specs/assets/20261105-002914/review.html
-events: 40
+events: 42
 ---
 
 # Issue #3 の索引
 
 この索引は `events/` から機械的に生成される写しです。手で書き換えないでください（次の記録で上書きされます）。
 
-- 現在地: `requirements-success`（outcome: 案B: iOS 版にも対応させて直す（選び直し））
+- 現在地: `impl-running`
 - フロー: `ai-default-medium` / 通過: `triage` → `requirements` → `impl` → `review` → `pr`
 - open な指摘: 1 件（Major 以上 0 件）
 
@@ -61,6 +61,7 @@ events: 40
 - pr → done
 - pr ⇢ requirements（区間 要望整理 を名指しして経路を飛ばした）
 - requirements → impl
+- requirements ⇢ impl（区間 実装 を名指しして経路を飛ばした）
 
 ## 記録（判断・懸念・検証・環境・質問）
 
