@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154202-review.yaml
+summary: 文言の判断を decision event に記録

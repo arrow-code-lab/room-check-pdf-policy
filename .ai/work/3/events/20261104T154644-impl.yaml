@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154415-review.yaml
+summary: 第 3 条の追記にプライバシーポリシーへのリンクを付けた

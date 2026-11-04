@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154416-review.yaml
+summary: 物件・号室の削除は物件管理モードであることを明記

@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154201-review.yaml
+summary: 削除対象を「本アプリのデータ」に限定し、共有・保存した PDF は残ることを追記

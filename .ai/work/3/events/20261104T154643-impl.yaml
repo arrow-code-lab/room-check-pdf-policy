@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154414-review.yaml
+summary: 5 章の保持期間にストレージ消去を追加し 7 章と揃えた

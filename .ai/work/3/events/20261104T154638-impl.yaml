@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: major
+state: done
+ref: 20261104T154412-review.yaml
+summary: 利用規約・プライバシーポリシーに改定履歴を置き、追記が既存動作の説明で利用条件を変えないこと・同日適用を明記（第12条の変更に当たらない判断は人の確認待ち）

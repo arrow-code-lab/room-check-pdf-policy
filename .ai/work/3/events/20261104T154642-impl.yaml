@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154413-review.yaml
+summary: プライバシーポリシー 10 章に改定履歴を追加

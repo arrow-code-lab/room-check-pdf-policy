@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: minor
+state: done
+ref: 20261104T154417-review.yaml
+summary: 加速度センサーの段落を権限の総括文の後ろへ移動

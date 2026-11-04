@@ -1,0 +1,6 @@
+node: impl
+kind: finding
+severity: major
+state: done
+ref: 20261104T154209-review.yaml
+summary: spec と review.html の絶対パスをリポジトリ名・リポジトリ相対パスに置換
